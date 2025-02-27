@@ -7,6 +7,25 @@
 ## Commit Style
 
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0)
+`commit-template.txt`:
+
+```txt
+
+# <type>[(optional scope)][!]: <description>
+# fix -> PATCH,
+# feat -> MINOR RELEASE,
+# chore, refactor, docs, style, test, perf, ci, build, revert
+
+# [optional body]
+# further detail
+# BREAKING CHANGE: … -> MAJOR RELEASE
+
+# [optional footer(s)]
+# Closes #123
+# References: #123
+# Reviewed-by: abc
+```
+
 [Git commit message guideline](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
 The Anatomy of a Commit Message
 Basic:
