@@ -2,6 +2,23 @@
 
 Pager system for the Medienscouts at our school
 
+## Folder Structure
+
+./
+├ pager/
+│ ├ circuit/
+│ │ └ ...
+│ ├ code/
+│ │ └ ...
+│ └ README.md
+├ server/
+│ ├ README.md
+│ ├ setup.sh
+│ └ ...
+├ CONTRIBUTING.md
+├ LICENSE
+└ README.md
+
 ## Background
 
 * _Medienscouts_ club at our school
@@ -15,17 +32,18 @@ Pager system for the Medienscouts at our school
 * how do teachers reach us?
 -> **Pagers**
 
-## Structure
+## Sequence Plan
 
 * teacher who needs help sends Email to Pager server's LernSax adress
 * server pulls down Emails periodically and checks for new entries
-* if new Email is recognized the server sends the Email Subject to each pager
+* if new Email is recognized the server serves the Email Subject to web API
     (via IP-Adress on school WiFi)
-* pager receives message, beeps and displays it
+* pager periodically polls web API, reads message, beeps and displays it
 
 ### Server
 
-* fetchmail + procmail
+<!-- * fetchmail + procmail -->
+* python libs
 
 #### Future
 
@@ -37,7 +55,7 @@ Pager system for the Medienscouts at our school
 
 ### Pager
 
-* esp32
+* ESP32
 * LCD screen
   * display battery level, wifi status
 * status light
