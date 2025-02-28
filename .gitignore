@@ -1,2 +1,9 @@
+# python dirs
 **/__pycache__
 **/.venv
+
+# dotenv
+**/.env
+
+# data file
+./server/data.json
