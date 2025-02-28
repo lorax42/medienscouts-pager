@@ -1,11 +1,20 @@
-import imaplib
-import email
-import time
-import dotenv
+"""
+server.py
+"""
+from flask import Flask
+import json
 
-# BASE_URL
-mail = imaplib.IMAP4_SSL('mail.lernsax.de')
-# EMAIL_ADRESS
-# EMAIL_PASSWORD
-mail.login('<name>@<school>.lernsax.de', '<password>')
-# mail.select('inbox')
+app = Flask(__name__)
+
+
+@app.route("/", methods=['GET'])
+def get_handler():
+    # return g.data
+    with open("data.json", "r", encoding="utf-8") as f:
+        string = f.read()
+
+    return string
+
+
+if __name__ == "__main__":
+    app.run()
