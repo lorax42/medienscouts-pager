@@ -6,4 +6,4 @@
 **/.env
 
 # data file
-./server/data.json
+server/data.json
