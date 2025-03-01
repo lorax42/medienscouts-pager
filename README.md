@@ -4,6 +4,7 @@ Pager system for the Medienscouts at our school
 
 ## Folder Structure
 
+<pre>
 ./
 ├ pager/
 │ ├ circuit/
@@ -18,6 +19,7 @@ Pager system for the Medienscouts at our school
 ├ CONTRIBUTING.md
 ├ LICENSE
 └ README.md
+</pre>
 
 ## Background
 
