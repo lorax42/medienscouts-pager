@@ -21,9 +21,16 @@
 # BREAKING CHANGE: … -> MAJOR RELEASE
 
 # [optional footer(s)]
+# BREAKING CHANGE: <description>
+# Fixes #123
 # Closes #123
-# References: #123
-# Reviewed-by: abc
+# Resolves #123
+# Related to #123
+# References #123
+# Co-authored-by: Jeremy
+# Reviewed-by: Jeremy
+# Signed-off-by: Jeremy
+# See also: Jerem
 ```
 
 [Git commit message guideline](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/)
